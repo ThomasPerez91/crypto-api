@@ -1,0 +1,200 @@
+[2024-06-18 20:30:55,755: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 20:30:55,757: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 20:30:56,765: INFO/MainProcess] mingle: all alone
+[2024-06-18 20:30:56,778: INFO/MainProcess] celery@f0e3b3bba678 ready.
+[2024-06-18 20:31:00,658: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 20:41:54,350: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 20:41:54,353: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 20:41:55,366: INFO/MainProcess] mingle: all alone
+[2024-06-18 20:41:55,381: INFO/MainProcess] celery@3017dffa6c38 ready.
+[2024-06-18 20:41:59,240: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:00:20,846: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:00:20,850: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:00:21,864: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:00:21,883: INFO/MainProcess] celery@96b77cdc9853 ready.
+[2024-06-18 21:00:25,682: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:01:07,285: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:01:07,291: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:01:08,305: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:01:08,314: INFO/MainProcess] celery@5b31f34c757a ready.
+[2024-06-18 21:01:12,409: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:05:03,674: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:05:03,678: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:05:04,694: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:05:04,709: INFO/MainProcess] celery@b899a826f3e1 ready.
+[2024-06-18 21:05:08,625: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:06:02,143: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:06:02,147: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:06:03,155: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:06:03,162: INFO/MainProcess] celery@19b6aefe735b ready.
+[2024-06-18 21:06:07,111: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:17:36,693: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:17:36,721: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:17:37,750: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:17:37,775: INFO/MainProcess] celery@5e1f02c6b7c7 ready.
+[2024-06-18 21:17:41,549: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:19:01,899: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:19:01,903: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:19:02,914: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:19:02,925: INFO/MainProcess] celery@cb4fa09d1f87 ready.
+[2024-06-18 21:19:06,763: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:22:55,986: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:22:55,988: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:22:56,994: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:22:57,005: INFO/MainProcess] celery@3475b410ae5b ready.
+[2024-06-18 21:23:00,847: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:29:41,698: ERROR/MainProcess] Received unregistered task of type 'test'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[10, 5], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (82b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'test', 'id': 'db070f54-7a1a-4938-a852-bb9b91014e0d', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'db070f54-7a1a-4938-a852-bb9b91014e0d', 'parent_id': None, 'argsrepr': '(10, 5)', 'kwargsrepr': '{}', 'origin': 'gen11@f6c63383f16a', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'test'
+[2024-06-18 21:32:45,394: ERROR/MainProcess] Received unregistered task of type 'test'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[10, 5], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (82b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'test', 'id': '2230119a-ca32-4c7a-9dda-a79728513f59', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '2230119a-ca32-4c7a-9dda-a79728513f59', 'parent_id': None, 'argsrepr': '(10, 5)', 'kwargsrepr': '{}', 'origin': 'gen11@f6c63383f16a', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'test'
+[2024-06-18 21:32:46,454: ERROR/MainProcess] Received unregistered task of type 'test'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[10, 5], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (82b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'test', 'id': 'f0a86195-ea4f-43ac-ab9a-e9ee6aadee11', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f0a86195-ea4f-43ac-ab9a-e9ee6aadee11', 'parent_id': None, 'argsrepr': '(10, 5)', 'kwargsrepr': '{}', 'origin': 'gen11@f6c63383f16a', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'test'
+[2024-06-18 21:32:47,762: ERROR/MainProcess] Received unregistered task of type 'test'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[10, 5], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (82b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'test', 'id': '9e98edf9-595e-40a5-8a8b-6b075f723ae1', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '9e98edf9-595e-40a5-8a8b-6b075f723ae1', 'parent_id': None, 'argsrepr': '(10, 5)', 'kwargsrepr': '{}', 'origin': 'gen11@f6c63383f16a', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'test'
+[2024-06-18 21:36:02,834: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:36:02,839: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:36:03,847: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:36:03,868: INFO/MainProcess] celery@9a018a57ef18 ready.
+[2024-06-18 21:36:07,854: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:36:41,039: ERROR/MainProcess] Received unregistered task of type 'test'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[10, 5], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (82b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'test', 'id': '1a5b2d55-eab0-4175-9ce0-9b06e2862bc1', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '1a5b2d55-eab0-4175-9ce0-9b06e2862bc1', 'parent_id': None, 'argsrepr': '(10, 5)', 'kwargsrepr': '{}', 'origin': 'gen8@59c92aba2509', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'test'
+[2024-06-18 21:42:50,046: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:42:50,048: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:42:51,054: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:42:51,066: INFO/MainProcess] celery@103c8ebb4eb4 ready.
+[2024-06-18 21:42:54,937: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:42:56,481: ERROR/MainProcess] Received unregistered task of type 'test'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[10, 5], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (82b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'test', 'id': '4498e06c-d749-49b3-90ee-dcb1e1ea7606', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '4498e06c-d749-49b3-90ee-dcb1e1ea7606', 'parent_id': None, 'argsrepr': '(10, 5)', 'kwargsrepr': '{}', 'origin': 'gen8@3b77cd6bbce2', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 659, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'test'
+[2024-06-18 21:51:15,475: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-18 21:51:15,477: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-18 21:51:16,489: INFO/MainProcess] mingle: all alone
+[2024-06-18 21:51:16,508: INFO/MainProcess] celery@6ebea4c3c5b1 ready.
+[2024-06-18 21:51:20,376: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-18 21:51:23,372: INFO/MainProcess] Task pouet[2d6b0a06-df61-4220-b079-21be5c1e83e2] received
+[2024-06-18 21:51:23,376: INFO/ForkPoolWorker-7] Task pouet[2d6b0a06-df61-4220-b079-21be5c1e83e2] succeeded in 0.002570958999967843s: 15
