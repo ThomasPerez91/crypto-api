@@ -6,9 +6,6 @@ from fastapi import FastAPI, Depends, HTTPException  # type: ignore
 from sqlalchemy.orm import Session  # type: ignore
 from config.celery import pouet
 
-
-models.Base.metadata.create_all(bind=engine)
-
 app = FastAPI()
 
 
@@ -33,9 +30,8 @@ def create_crypto(crypto: schemas.CryptoCreate, db: Session = Depends(get_db)):
             status_code=400, detail="Crypto already registered")
     return crud.create_crypto(db=db, crypto=crypto)
 
+
 # Endpoint pour déclencher la tâche Celery
-
-
 @app.post("/trigger-task/")
 async def trigger_task(a: int, b: int):
     result = pouet.delay(a, b)  # Déclenche la tâche de manière asynchrone

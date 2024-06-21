@@ -4,9 +4,9 @@ from pydantic import BaseModel  # type: ignore
 
 
 class CryptoBase(BaseModel):
-    id: int
     name: str
     symbol: str
+    base: str
 
 
 class CryptoCreate(CryptoBase):

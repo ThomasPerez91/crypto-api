@@ -17,7 +17,8 @@ def get_cryptos(db: Session):
 
 
 def create_crypto(db: Session, crypto: schemas.CryptoCreate):
-    db_crypto = models.Crypto(name=crypto.name, symbol=crypto.symbol)
+    db_crypto = models.Crypto(
+        name=crypto.name, symbol=crypto.symbol, base=crypto.base)
     db.add(db_crypto)
     db.commit()
     db.refresh(db_crypto)
