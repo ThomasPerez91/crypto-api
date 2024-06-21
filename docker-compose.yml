@@ -4,12 +4,12 @@ services:
     build: ./project
     ports:
       - 8004:8000
-    command: uvicorn main:app --host 0.0.0.0 --reload
     volumes:
       - ./project:/usr/src/app
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SQLALCHEMY_DATABASE_URL=postgresql+psycopg2://shadow:Karerucl56@postgres:5432/crypto-api
     env_file:
       - .env
     depends_on:
@@ -39,6 +39,7 @@ services:
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SQLALCHEMY_DATABASE_URL=postgresql+psycopg2://shadow:Karerucl56@postgres:5432/crypto-api
     depends_on:
       - web
       - redis
@@ -56,6 +57,7 @@ services:
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SQLALCHEMY_DATABASE_URL=postgresql://shadow:Karerucl56@postgres:5432/crypto-api
     depends_on:
       - web
       - redis
