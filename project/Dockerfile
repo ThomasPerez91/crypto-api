@@ -15,3 +15,4 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . .
+CMD ["sh", "-c", "alembic upgrade head && uvicorn main:app --host 0.0.0.0 --reload"]
