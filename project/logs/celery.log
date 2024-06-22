@@ -301,3 +301,45 @@ Trying again in 6.00 seconds... (3/100)
 [2024-06-22 15:20:29,411: INFO/MainProcess] mingle: all alone
 [2024-06-22 15:20:29,417: INFO/MainProcess] celery@4a5ba6e9f5ae ready.
 [2024-06-22 15:20:33,379: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 16:47:50,821: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 16:47:50,826: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 16:47:51,812: INFO/MainProcess] mingle: all alone
+[2024-06-22 16:47:51,844: INFO/MainProcess] celery@a0709c2c2f99 ready.
+[2024-06-22 16:47:55,656: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 16:50:32,342: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 16:50:32,345: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 16:50:33,355: INFO/MainProcess] mingle: all alone
+[2024-06-22 16:50:33,386: INFO/MainProcess] celery@cc6c97aa8e7a ready.
+[2024-06-22 16:50:37,188: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 16:52:24,543: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 16:52:24,545: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 16:52:25,551: INFO/MainProcess] mingle: all alone
+[2024-06-22 16:52:25,558: INFO/MainProcess] celery@f80272a9928b ready.
+[2024-06-22 16:52:29,457: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 17:02:28,835: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 17:02:28,838: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 17:02:29,866: INFO/MainProcess] mingle: all alone
+[2024-06-22 17:02:29,900: INFO/MainProcess] celery@5323439a4d68 ready.
+[2024-06-22 17:02:33,729: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 17:02:47,639: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 17:02:47,643: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 17:02:48,653: INFO/MainProcess] mingle: all alone
+[2024-06-22 17:02:48,665: INFO/MainProcess] celery@23a1a6b5c734 ready.
+[2024-06-22 17:02:52,638: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 17:07:10,131: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 17:07:10,138: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 17:07:11,157: INFO/MainProcess] mingle: all alone
+[2024-06-22 17:07:11,172: INFO/MainProcess] celery@d46330c86ba2 ready.
+[2024-06-22 17:07:15,057: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 17:20:29,404: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 17:20:29,406: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 17:20:30,413: INFO/MainProcess] mingle: all alone
+[2024-06-22 17:20:30,424: INFO/MainProcess] celery@7165f7bd7b46 ready.
+[2024-06-22 17:20:34,283: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 17:34:56,865: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-06-22 17:34:56,871: INFO/MainProcess] mingle: searching for neighbors
+[2024-06-22 17:34:57,882: INFO/MainProcess] mingle: all alone
+[2024-06-22 17:34:57,890: INFO/MainProcess] celery@c70695f3e490 ready.
+[2024-06-22 17:35:01,755: INFO/MainProcess] Events of group {task} enabled by remote.
+[2024-06-22 17:44:03,938: INFO/MainProcess] Task pouet[ea0406fc-7c0e-4bb2-95c6-0ccaf8baeade] received
+[2024-06-22 17:44:03,951: INFO/ForkPoolWorker-7] Task pouet[ea0406fc-7c0e-4bb2-95c6-0ccaf8baeade] succeeded in 0.006811832994571887s: 30
