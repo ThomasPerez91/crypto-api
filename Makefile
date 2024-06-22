@@ -1,19 +1,23 @@
-NAME ?= "Create a baseline migrations"
+# Makefile
 
+# Define a variable for the message with a default value
+MESSAGE ?= "Create_a_baseline_migrations"
+
+# Rule to run alembic command in the /project directory
 migration:
-    @cd project && alembic revision --autogenerate -m "$(NAME)"
+	@cd project && alembic revision --autogenerate -m "$(MESSAGE)"
 
-# Start the containers
+# Rule to start the containers
 start:
-    docker-compose up -d
+	@docker-compose up -d
 
-# Stop the containers
+# Rule to stop the containers
 stop:
-    docker-compose down
+	@docker-compose down
 
-# Remove containers, networks, volumes, and images created by `up`
+# Rule to remove containers, networks, volumes, and images created by `up`
 remove:
-    docker-compose down --volumes --rmi all
+	@docker-compose down --volumes --rmi all
 
-# Recreate the containers
+# Rule to recreate the containers
 recreate: remove start
